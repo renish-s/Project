@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProjectNEST.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <style>
+
+
+
+       nav{
+    background-color:violet;
+    height:50px;
+}
+nav ul{
+    text-align:center;
+   
+}
+    nav li {
+        display: inline-block;
+        margin-top: 1%;
+    }
+
+
+
+nav li a{
+    color:white;
+    text-decoration:none;
+    padding:0px 90px;
+   
+}
+
+
+
+nav li a:hover{
+    color:green;
+    transition:all 0.4S ;
+}
+    </style>
+
+
+
+    <nav>
+                    <ul>
+                         <li><a href="#">Home</a></li>
+                        <li><a href="productlogin.aspx">Product registration</a></li>
+                        <li><a href="Admstudentdetails.aspx">Confirmation</a></li>                        
+
+                        
+                    </ul>
+
+
+
+           </nav>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
